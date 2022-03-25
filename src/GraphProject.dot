@@ -1,0 +1,39 @@
+digraph G{
+	"index"->"MainPage";
+	"MainPage"->"NavigationPanel";
+	"MainPage"->"MsgPage";
+	"MainPage"->"FriendsPage";
+	"MainPage"->"Feed";
+	
+	"NavigationPanel"->"SignIn";
+	"NavigationPanel"->"LogIn";
+	"NavigationPanel"->"LogOut";
+	
+	"SignIn"->"Signin";
+	"LogIn"->"Login";
+	"LogOut"->"Logout";
+	
+	"MsgPage"->"WriteMessage";
+	"MsgPage"->"ListMessage";
+	"MsgPage"->"Message";
+	
+	"FriendsPage"->"FriendsList";
+	"FriendsPage"->"AddFriends";
+	"FriendsPage"->"DeleteFriends";
+	
+	"index" [shape = box];
+	"MainPage" [shape = box];
+	"NavigationPanel" [shape = box];
+	"SignIn" [shape = box];
+	"LogOut" [shape = box];
+	"LogIn" [shape = box];
+	"MsgPage"[shape = box];
+	"Message"[shape = box];
+	"WriteMessage"[shape = box];
+	"ListMessage"[shape = box];
+	"FriendsPage"[shape = box];
+	"AddFriends"[shape = box];
+	"DeleteFriends"[shape = box];
+	"FriendsList"[shape = box];
+	"Feed"[shape = box];
+}

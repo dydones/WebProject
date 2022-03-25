@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Login from './Login.js';
 import NavigationPanel from './NavigationPanel';
+import MsgPage from './MsgPage.js';
+import './MainPage.css';
 
 class MainPage extends Component{
 	constructor(){
@@ -42,11 +44,11 @@ class MainPage extends Component{
 	
 	render(){
 		return(
-		<div> 
-			
-				{this.state.page === "signin_page" ? <Login /> : <Login />}  					
+		<div id="MainMenu"> 
+				{this.state.page == "signin_page" ? <Login /> : <Login />}  					
 				<button onClick={this.getconnected} >login</button>
 			<h1> Ceci est la MainPage </h1>
+			<MsgPage />
 		</div>
 		);
 	}
