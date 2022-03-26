@@ -1,6 +1,6 @@
 digraph G{
-	"index"->"MainPage";
-	"MainPage"->"NavigationPanel";
+	"index"->"NavigationPanel";
+	"NavigationPanel"->"MainPage";
 	"MainPage"->"MsgPage";
 	"MainPage"->"FriendsPage";
 	"MainPage"->"Feed";
@@ -8,10 +8,6 @@ digraph G{
 	"NavigationPanel"->"SignIn";
 	"NavigationPanel"->"LogIn";
 	"NavigationPanel"->"LogOut";
-	
-	"SignIn"->"Signin";
-	"LogIn"->"Login";
-	"LogOut"->"Logout";
 	
 	"MsgPage"->"WriteMessage";
 	"MsgPage"->"ListMessage";
