@@ -3,6 +3,7 @@ import Login from './Login.js';
 import NavigationPanel from './NavigationPanel';
 import MsgPage from './MsgPage.js';
 import './MainPage.css';
+import logo from "./logo.png";
 
 class MainPage extends Component{
 	constructor(){
@@ -45,9 +46,12 @@ class MainPage extends Component{
 	render(){
 		return(
 		<div id="MainMenu"> 
+			<img className="appLogo" src={logo}></img>
+			<div id="SignIn_form">
 				{this.state.page == "signin_page" ? <Login /> : <Login />}  					
 				<button onClick={this.getconnected} >login</button>
-			<h1> Ceci est la MainPage </h1>
+			</div>
+			<h1> This is the MainPage </h1>
 			<MsgPage />
 		</div>
 		);

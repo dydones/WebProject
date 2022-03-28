@@ -1,0 +1,17 @@
+input{
+	margin-right: 0%;
+	
+	text-align: center;
+}
+
+/*.input-container{
+	border-color: #7DF754;
+}*/
+
+#buttonSub:hover{
+	background-color: #A7F78D;
+	border-color: #7DF754; 
+	color: White;
+	
+	transition-duration: 0.5s;
+}

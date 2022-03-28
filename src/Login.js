@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import Prompt from "react-router-dom";
+import "./Login.css";
 
 function Login() {
   // React States
@@ -77,7 +78,7 @@ function Login() {
           {renderErrorMessage("pass")}
         </div>
         <div className="button-container">
-          <input type="submit" />
+          <input type="submit" id="buttonSub"/>
         </div>
       </form>
     </div>
