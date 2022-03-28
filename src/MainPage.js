@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Login from './Login.js';
 import NavigationPanel from './NavigationPanel';
-import MsgPage from './MsgPage.js';
+import Msgpage from './MsgPage.js';
+import Signin from './SignIn.js';
 import './MainPage.css';
 import logo from "./logo.png";
 
@@ -45,14 +46,22 @@ class MainPage extends Component{
 	
 	render(){
 		return(
-		<div id="MainMenu"> 
-			<img className="appLogo" src={logo}></img>
+		<div id="MainMenu">
+				<div id="divImg"> 
+					<img className="appLogo" src={logo}></img>
+				</div>
 			<div id="SignIn_form">
 				{this.state.page == "signin_page" ? <Login /> : <Login />}  					
-				<button onClick={this.getconnected} >login</button>
+				<button id="loginButton" onClick={this.getconnected} >login</button>
 			</div>
+			<table className="band"> 
+				<td><button className="bandButton"> MainPage</button> </td>  
+				<td><button className="bandButton"> Login</button>    </td>   
+				<td><button className="bandButton"> SignIn</button>   </td>     
+				<td><button className="bandButton" id="MsgButt" onClick={Msgpage.changeDispValue}> Messages</button> </td>
+			</table>
 			<h1> This is the MainPage </h1>
-			<MsgPage />
+			<Msgpage disp="true"/>
 		</div>
 		);
 	}

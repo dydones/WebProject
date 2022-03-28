@@ -17,7 +17,7 @@
 	
 }
 
-button:hover{
+#loginButton:hover{
 	background-color: #A7F78D;
 	border-color: #7DF754; 
 	color: White;
@@ -25,8 +25,65 @@ button:hover{
 	transition-duration: 0.4s;
 }
 
+#divImg{
+	
+	animation-name: "logo_animation";
+	animation-delay: 0s;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-direction: alternate;
+}
+
 .appLogo{
+	
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.bandButton{
+	background: transparent;
+	border: transparent;
+	
+	width: 100%;
+}
+
+.band{
+	margin-top: 1%;
+	background-color: #B27DB0;
+	height: 25px;
+	
+	width: 100%;
+	
+	border-collapse: collapse;
+}
+td{
+	color: Black;
+	height: 100%;
+}
+
+td:hover{
+	background-color: #AF45AB;
+	
+	color:White;
+	
+	transition-duration: 0.4s;
+}
+
+/*when the cursor is out of the band cells*/
+td:not(:hover){
+	background-color: #B27DB0;
+	transition-duration: 0.4s;
+	
+	color: Black;
+}
+
+@keyframes logo_animation {
+	From{
+		opacity: 100%;
+		}
+	To{
+		opacity: 10%;
+	}
 }
