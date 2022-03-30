@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Login from './Login.js';
-import NavigationPanel from './NavigationPanel';
-import Msgpage from './MsgPage.js';
+import MsgPage from './MsgPage.js';
 import Signin from './SignIn.js';
 import './MainPage.css';
 import logo from "./logo.png";
@@ -11,7 +10,7 @@ class MainPage extends Component{
 		super();
 		this.state={
 			page : 'signin_page',
-			isconnected : false,
+			isconnected : false
 		};
 		
 		this.getconnected = this.getconnected.bind(this);
@@ -33,7 +32,7 @@ class MainPage extends Component{
 	getconnected()  {
 		this.setState({
 			page : 'message_page',
-			isconnected : true,
+			isconnected : true
 			})
 	}
 	
@@ -58,10 +57,10 @@ class MainPage extends Component{
 				<td><button className="bandButton"> MainPage</button> </td>  
 				<td><button className="bandButton"> Login</button>    </td>   
 				<td><button className="bandButton"> SignIn</button>   </td>     
-				<td><button className="bandButton" id="MsgButt" onClick={Msgpage.changeDispValue}> Messages</button> </td>
+				<td><button className="bandButton" id="MsgButt"> Messages</button> </td>
 			</table>
 			<h1> This is the MainPage </h1>
-			<Msgpage disp="true"/>
+			<MsgPage />
 		</div>
 		);
 	}
