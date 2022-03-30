@@ -1,11 +1,11 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Navlink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import { useNavigation } from "react-router-dom";
 import React, { Component } from 'react';
 import Login from './Login.js';
 import MsgPage from './MsgPage.js';
 import Signin from './SignIn.js';
 import MainPage from './MainPage.js';
-import './MainPage.css';
+import './NavigationPanel.css';
 import logo from "./logo.png";
 
 class NavigationPanel extends Component{
@@ -16,17 +16,18 @@ class NavigationPanel extends Component{
 			isconnected: false
 		};
 	}
-		
+	
+	
+			
 	render(){
     return (
       <div className="NavigationPanel">
-        <BrowserRouter>
-			<Routes>
-				<Route path="/Messages" element={<MsgPage />} />
-				<Route path="/Login" element={<Login />} />
-				<Route path="/MainPage" element={<MainPage />} />
-			</Routes>
-		</BrowserRouter>
+      	<table className="band"> 
+				<td><NavLink to="/MainPage"> <button className="bandButton"> MainPage</button> 				</NavLink> 	 </td>  
+				<td><NavLink to="/Login">    <button className="bandButton"> Login</button>					</NavLink>   </td>   
+				<td><NavLink to="/SignIn">   <button className="bandButton"> SignIn</button> 				</NavLink>   </td>     
+				<td><NavLink to="/MsgPage">  <button className="bandButton" id="MsgButt" onClick={this.props.navigation.navigate("/MsgPage")}> Messages</button>	</NavLink> 	 </td>
+			</table>
       </div>
     );
   }

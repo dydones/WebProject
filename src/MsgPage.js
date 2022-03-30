@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { useState } from 'react';
-import Mainpage from './MainPage.js';
+
+import NavigationPanel from './NavigationPanel.js';
 
 class MsgPage extends Component{
 	constructor(props){
@@ -21,7 +22,6 @@ class MsgPage extends Component{
 		if(this.props.disp === "true"){
 			return (
 			<div className = "MsgPage">
-				<Mainpage />
 				<h>My Messages </h>
 				<table>
 					<tr>My Messages </tr>
@@ -34,17 +34,19 @@ class MsgPage extends Component{
 		else{
 			return (
 				<div>
-					NON ce n'est pas vrai lol'
+					NON ce n'est pas vrai lol' (disp != true)
 				</div>
-			)
+			);
 		}
 	}
 
 	render(){
 		return(
 		<div>
+			<NavigationPanel />
 			{this.displayMsgPage(this.props.disp)};
-		</div>);
+		</div>
+		);
 		}
 }
 

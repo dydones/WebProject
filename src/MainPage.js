@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import { Routes, Route } from "react-router-dom";
+
+import NavigationPanel from './NavigationPanel.js';
 import Login from './Login.js';
 import MsgPage from './MsgPage.js';
 import Signin from './SignIn.js';
@@ -53,14 +56,8 @@ class MainPage extends Component{
 				{this.state.page == "signin_page" ? <Login /> : <Login />}  					
 				<button id="loginButton" onClick={this.getconnected} >login</button>
 			</div>
-			<table className="band"> 
-				<td><button className="bandButton"> MainPage</button> </td>  
-				<td><button className="bandButton"> Login</button>    </td>   
-				<td><button className="bandButton"> SignIn</button>   </td>     
-				<td><button className="bandButton" id="MsgButt"> Messages</button> </td>
-			</table>
+			<NavigationPanel />
 			<h1> This is the MainPage </h1>
-			<MsgPage />
 		</div>
 		);
 	}

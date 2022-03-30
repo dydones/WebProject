@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import Prompt from "react-router-dom";
+
+import NavigationPanel from './NavigationPanel.js';
 import "./Login.css";
 
 function Login() {
