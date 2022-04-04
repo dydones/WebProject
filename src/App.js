@@ -16,8 +16,9 @@ class App extends Component {
 			<Routes>
 				<Route path="/" element={<MainPage />} />
 				<Route path="*" element={<MainPage />} />
-				<Route path="/Messages" element={<MsgPage />} />
+				<Route path="/MsgPage" element={<MsgPage />} />
 				<Route path="/Login" element={<Login />} />
+				<Route path="/Signin" element={<Signin />} />
 				<Route path="/MainPage" element={<MainPage />} />
 			</Routes>
 			</BrowserRouter>

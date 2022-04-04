@@ -45,6 +45,7 @@ class MsgPage extends Component{
 		<div>
 			<NavigationPanel />
 			{this.displayMsgPage(this.props.disp)};
+			<h1>Yo write that down</h1>
 		</div>
 		);
 		}
