@@ -6,6 +6,7 @@ import Login from './Login.js';
 import MsgPage from './MsgPage.js';
 import Signin from './SignIn.js';
 import MainPage from './MainPage.js';
+import FriendsPage from './FriendsPage.js';
 
 class App extends Component {
   render() {
@@ -20,6 +21,7 @@ class App extends Component {
 				<Route path="/Login" element={<Login />} />
 				<Route path="/Signin" element={<Signin />} />
 				<Route path="/MainPage" element={<MainPage />} />
+				<Route path="/FriendsPage" element={<FriendsPage />} />
 			</Routes>
 			</BrowserRouter>
       </div>

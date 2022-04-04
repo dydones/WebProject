@@ -1,0 +1,37 @@
+#message_canvas{
+	height: 100px;
+	width: 480px;
+	
+	background: transparent;
+	border: transparent;
+	text-align: start;
+}
+
+.messageBox{
+	width: 480px;
+
+	border: 2px solid;
+	border-radius: 10px;
+	border-color: #AF45AB;
+	
+	box-shadow: 3px 3px 3px #B4A8B4;
+	
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#sendButton:hover{
+	background-color: #A7F78D;
+	border-color: #7DF754; 
+	color: White;
+	
+	transition-duration: 0.4s;
+}
+
+#message_canvas:focus{
+	outline: none;
+}
+
+#message_canvas:focus::placeholder{
+	color: #7DF754;
+}

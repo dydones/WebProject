@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { useState } from 'react';
 
 import NavigationPanel from './NavigationPanel.js';
+import Message from './Message.js';
 
 class MsgPage extends Component{
 	constructor(props){
@@ -46,6 +47,7 @@ class MsgPage extends Component{
 			<NavigationPanel />
 			{this.displayMsgPage(this.props.disp)};
 			<h1>Yo write that down</h1>
+			<Message />
 		</div>
 		);
 		}

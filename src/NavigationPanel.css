@@ -7,7 +7,7 @@
 
 .band{
 	margin-top: 1%;
-	background: linear-gradient(to right, #B27DB0, #A7F78D);
+	background: linear-gradient(to right, #B27DB0, 75%, #A7F78D);
 	height: 25px;
 	
 	width: 100%;

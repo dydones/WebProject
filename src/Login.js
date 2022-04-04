@@ -5,6 +5,8 @@ import Prompt from "react-router-dom";
 import NavigationPanel from './NavigationPanel.js';
 import "./Login.css";
 
+import logo from './logo.svg';
+
 function Login() {
   // React States
   const [errorMessages, setErrorMessages] = useState({});

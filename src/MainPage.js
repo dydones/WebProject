@@ -49,14 +49,11 @@ class MainPage extends Component{
 	render(){
 		return(
 		<div id="MainMenu">
-				<div id="divImg"> 
-					<img className="appLogo" src={logo}></img>
-				</div>
+			<NavigationPanel />
 			<div id="SignIn_form">
 				{this.state.page == "signin_page" ? <Login /> : <Login />}  					
 				<button id="loginButton" onClick={this.getconnected} >login</button>
 			</div>
-			<NavigationPanel />
 			<h1> This is the MainPage </h1>
 		</div>
 		);
